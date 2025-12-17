@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Star & Sky Makeup</title>
+    
+
+    <link rel="stylesheet" href="galeria.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">⭐</div>
+                <h3>STAR & SKY</h3>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">🏠 Inicio</a></li>
+                    <li><a href="index.html#productos">💄 Productos</a></li>
+                    <li><a href="galeria.html" class="active">📷 Galería</a></li>
+                    <li><a href="index.html#pedidos">🛒 Pedidos</a></li>
+                    <li><a href="index.html#contacto">📞 Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <header class="header">
+                <h1>📷 GALERÍA DE PRODUCTOS</h1>
+                <p style="color: white; font-size: 1.2em;">Descubre nuestra colección completa</p>
+            </header>
+            
+            <!-- Carrete principal -->
+            <section class="gallery-section">
+                <h2>✨ Productos Destacados</h2>
+                
+                <div class="carousel-container">
+                    <div class="carousel" id="mainCarousel">
+                        <div class="carousel-item" onclick="openModal('Bases de Maquillaje', 'Perfecta cobertura para todo tipo de piel')">
+                            <div>
+                                💧<br>
+                                <strong>Bases Premium</strong><br>
+                                Cobertura perfecta
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item" onclick="openModal('Paletas de Sombras', 'Colores vibrantes y duraderos')">
+                            <div>
+                                🎨<br>
+                                <strong>Paletas Exclusivas</strong><br>
+                                90 tonos disponibles
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item" onclick="openModal('Labiales de Lujo', 'Fórmula de larga duración')">
+                            <div>
+                                💋<br>
+                                <strong>Labiales Matte</strong><br>
+                                Larga duración
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item" onclick="openModal('Máscaras Premium', 'Volumen y longitud extrema')">
+                            <div>
+                                👁️<br>
+                                <strong>Máscaras de Pestañas</strong><br>
+                                Volumen extremo
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item" onclick="openModal('Pestañas Postizas', 'Efecto natural y glamoroso')">
+                            <div>
+                                ✨<br>
+                                <strong>Pestañas Postizas</strong><br>
+                                Efecto natural
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item" onclick="openModal('Kit Completo', 'Todo lo que necesitas para brillar')">
+                            <div>
+                                🎁<br>
+                                <strong>Kit Star & Sky</strong><br>
+                                Colección completa
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn" onclick="moveCarousel(-1)">⬅️ Anterior</button>
+                    <button class="carousel-btn" onclick="moveCarousel(1)">Siguiente ➡️</button>
+                </div>
+            </section>
+            
+            <!-- Grid de productos -->
+            <section class="gallery-section">
+                <h2>🛍️ Catálogo Completo</h2>
+                
+                <div class="products-grid">
+                    <div class="product-card" onclick="openModal('Base Líquida Premium', 'Cobertura natural, acabado sedoso. Disponible en 12 tonos.')">
+                        <div class="product-image">💧</div>
+                        <div class="product-name">Base Líquida</div>
+                        <div class="product-price">$299 MXN</div>
+                    </div>
+                    
+                    <div class="product-card" onclick="openModal('Paleta Rainbow', '40 sombras en colores vibrantes. Perfecta para looks creativos.')">
+                        <div class="product-image">🌈</div>
+                        <div class="product-name">Paleta Rainbow</div>
+                        <div class="product-price">$599 MXN</div>
+                    </div>
+                    
+                    <div class="product-card" onclick="openModal('Labial Matte Rose', 'Fórmula de larga duración en tono rosa perfecto.')">
+                        <div class="product-image">🌹</div>
+                        <div class="product-name">Labial Matte</div>
+                        <div class="product-price">$199 MXN</div>
+                    </div>
+                    
+                    <div class="product-card" onclick="openModal('Máscara Volumen+', 'Pestañas hasta 3 veces más voluminosas.')">
+                        <div class="product-image">👁️</div>
+                        <div class="product-name">Máscara Volumen+</div>
+                        <div class="product-price">$249 MXN</div>
+                    </div>
+                    
+                    <div class="product-card" onclick="openModal('Pestañas Naturales', 'Paquete de 5 pares, efecto natural y elegante.')">
+                        <div class="product-image">✨</div>
+                        <div class="product-name">Pestañas Naturales</div>
+                        <div class="product-price">$149 MXN</div>
+                    </div>
+                    
+                    <div class="product-card" onclick="openModal('Kit Principiante', 'Todo lo básico para empezar tu rutina de maquillaje.')">
+                        <div class="product-image">🎨</div>
+                        <div class="product-name">Kit Principiante</div>
+                        <div class="product-price">$799 MXN</div>
+                    </div>
+                    
+                    <div class="product-card" onclick="openModal('Gloss Diamante', 'Brillo intenso con partículas de diamante.')">
+                        <div class="product-image">💎</div>
+                        <div class="product-name">Gloss Diamante</div>
+                        <div class="product-price">$179 MXN</div>
+                    </div>
+                    
+                    <div class="product-card" onclick="openModal('Base en Polvo HD', 'Acabado mate perfecto para fotografías.')">
+                        <div class="product-image">📸</div>
+                        <div class="product-name">Base Polvo HD</div>
+                        <div class="product-price">$349 MXN</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <!-- Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Producto</h2>
+            <p id="modalDescription">Descripción del producto</p>
+            <button class="carousel-btn" style="margin-top: 20px;" onclick="closeModal(); window.location.href='index.html#pedidos'">
+                🛒 Agregar al Pedido
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        let currentSlide = 0;
+        const carousel = document.getElementById('mainCarousel');
+        const totalSlides = carousel.children.length;
+        
+        function moveCarousel(direction) {
+            currentSlide += direction;
+            
+            if (currentSlide >= totalSlides - 2) {
+                currentSlide = totalSlides - 3;
+            }
+            if (currentSlide < 0) {
+                currentSlide = 0;
+            }
+            
+            const slideWidth = 320; // 300px + 20px gap
+            carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        }
+        
+        // Auto-scroll cada 5 segundos
+        setInterval(() => {
+            if (currentSlide < totalSlides - 3) {
+                moveCarousel(1);
+            } else {
+                currentSlide = -1;
+                moveCarousel(1);
+            }
+        }, 5000);
+        
+        function openModal(title, description) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDescription').textContent = description;
+            document.getElementById('productModal').style.display = 'block';
+        }
+        
+        function closeModal() {
+            document.getElementById('productModal').style.display = 'none';
+        }
+        
+        // Cerrar modal al hacer clic fuera de él
+        window.onclick = function(event) {
+            const modal = document.getElementById('productModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
