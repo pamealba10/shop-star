@@ -1,0 +1,144 @@
+/*  Estos son los estilos de la página principal */ 
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #7a3b7a, #b19cd9);
+            min-height: 100vh;
+        }
+        
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        
+        /* Menú lateral */
+        .sidebar {
+            width: 250px;
+            background: rgba(115, 96, 160, 0.95);
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 0 15px 15px 0;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .menu ul {
+            list-style: none;
+        }
+        
+        .menu li {
+            margin-bottom: 15px;
+        }
+        
+        .menu a {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #020202;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .menu a:hover {
+            background: linear-gradient(45deg, #406284, #45c4a6);
+            color: white;
+            transform: translateX(5px);
+        }
+        
+
+
+/* Estilos específicos para el formulario de pedidos */
+
+.section-intro {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.order-form fieldset {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 18px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.order-form legend {
+  padding: 0 8px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  gap: 12px 20px;
+  align-items: center;
+}
+
+.item-row {
+  display: contents; /* permite que los hijos ocupen columnas de la grid */
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Ajustes de inputs para este formulario */
+.form-section input[type="number"] {
+  width: 140px;
+}
+
+.extra-data {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.form-group label {
+  color: #fff;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"] {
+  width: 100%;
+  max-width: 420px;
+}
+
+.submit-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.submit-row button {
+  min-width: 220px;
+}

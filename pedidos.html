@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star & Sky - Makeup Store</title>
+    
+   <!--  <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="pedidos.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <!-- <div class="logo-icon">★</div> -->
+                <img src="/img/STAR2.jpg" alt="Logo de STAR & SKY" style="width: 170px; height: auto; border-radius: 50%; margin-top: 10px;">
+                <h3>STAR & SKY</h3>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="#inicio">🏠 Inicio</a></li>
+                    <li><a href="productos.html">💄 Productos</a></li>
+                    <li><a href="galeria.html">📷 Galería</a></li>
+                    <li><a href="pedidos.html">🛒 Pedidos</a></li>
+                    <li><a href="contacto.html">📞 Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+
+
+ <!-- Realizar pedido -->
+
+    <section id="pedidos" class="content-section">
+        <h2>🛒 PEDIDOS EN LÍNEA</h2>
+        <p class="section-intro">¡Realiza tu pedido fácil y rápido!</p>
+
+        <div class="form-section">
+            <form class="order-form" action="https://sheetdb.io/api/v1/0e4w9kibobioy" method="POST">
+
+                <fieldset>
+                    <legend>Tipos de bases</legend>
+                    <div class="form-grid">
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="base_crema" name="Crema" value="Crema">
+                                <label for="base_crema">Crema</label>
+                            </div>
+                            <input type="number" id="CremaNumber" name="CremaNumber" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="base_liquida" name="Liquida" value="Liquida">
+                                <label for="base_liquida">Líquida</label>
+                            </div>
+                            <input type="number" id="LiquidaNumber" name="LiquidaNumber" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="base_polvo" name="Polvo" value="Polvo">
+                                <label for="base_polvo">Polvo</label>
+                            </div>
+                            <input type="number" id="PolvoNumber" name="PolvoNumber" placeholder="¿Cuántos?" min="1">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Paleta de sombras</legend>
+                    <div class="form-grid">
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="sombras_bolsillo" name="Sombras de bolsillo" value="Sombras de bolsillo">
+                                <label for="sombras_bolsillo">Sombras de bolsillo</label>
+                            </div>
+                            <input type="number" name="Sombras_de_bolsillo_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="sombras_40" name="topping2" value="sombras">
+                                <label for="sombras_40">Sombras de 40 tonos</label>
+                            </div>
+                            <input type="number" name="Sombras_40_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="sombras_60" name="Sombras de 40 tonos" value="Sombras de 40 tonos">
+                                <label for="sombras_60">Sombras de 60 tonos</label>
+                            </div>
+                            <input type="number" name="Sombras_60_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="sombras_90" name="Sombras de 90 tonos" value="Sombras de 90 tonos">
+                                <label for="sombras_90">Sombras de 90 tonos</label>
+                            </div>
+                            <input type="number" name="Sombras_90_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="sombras_brillos" name="Sombras de brillos" value="Sombras de brillos">
+                                <label for="sombras_brillos">Sombras de brillos</label>
+                            </div>
+                            <input type="number" name="Sombras_brillos_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="sombras_fosfo" name="topping6" value="sombras">
+                                <label for="sombras_fosfo">Sombras fosforescentes</label>
+                            </div>
+                            <input type="number" name="Sombras_fosfo_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Labiales</legend>
+                    <div class="form-grid">
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="labial_matte" name="topping1" value="Labiales">
+                                <label for="labial_matte">Labial Matte</label>
+                            </div>
+                            <input type="number" name="Labial_Matte_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="labial_gloss" name="topping2" value="Labiales">
+                                <label for="labial_gloss">Gloss</label>
+                            </div>
+                            <input type="number" name="Gloss_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="labial_liquido_matte" name="topping3" value="Labiales">
+                                <label for="labial_liquido_matte">Líquido Matte</label>
+                            </div>
+                            <input type="number" name="Liquido_Matte_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Máscara de pestañas</legend>
+                    <div class="form-grid">
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="mascara_negro" name="topping1" value="pestañas">
+                                <label for="mascara_negro">Color negro</label>
+                            </div>
+                            <input type="number" name="Mascara_Negro_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="mascara_transparente" name="topping2" value="pestañas">
+                                <label for="mascara_transparente">Transparente</label>
+                            </div>
+                            <input type="number" name="Mascara_Transparente_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="mascara_otro" name="topping3" value="pestañas">
+                                <label for="mascara_otro">Otro color</label>
+                            </div>
+                            <input type="number" name="Mascara_Otro_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Eyelashes</legend>
+                    <div class="form-grid">
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="eyelashes_10" name="topping1" value="Eyelashes">
+                                <label for="eyelashes_10">Paquete de 10</label>
+                            </div>
+                            <input type="number" name="Eyelashes_10_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="eyelashes_5" name="topping2" value="Eyelashes">
+                                <label for="eyelashes_5">Paquete de 5</label>
+                            </div>
+                            <input type="number" name="Eyelashes_5_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+
+                        <div class="item-row">
+                            <div class="option">
+                                <input type="checkbox" id="eyelashes_3" name="topping3" value="Eyelashes">
+                                <label for="eyelashes_3">Paquete de 3</label>
+                            </div>
+                            <input type="number" name="Eyelashes_3_Number" placeholder="¿Cuántos?" min="1">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos adicionales</legend>
+                    <div class="extra-data">
+                        <div class="form-group">
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" id="Nombre" name="Nombre" placeholder="¿Cómo te llamas?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Cel">Teléfono</label>
+                            <input type="number" id="Cel" name="Cel" placeholder="¿Cuál es tu número?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="email" id="Email" name="Email" placeholder="¿Cuál es tu correo?" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="submit-row">
+                    <button type="submit" value="Enviar">ENVIAR PEDIDO</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    </div>  
+
+
+    <!-- más opciones de formlario -->
+
+     <!--Entrada de texto simple <input type="text" name="txt"><br>
+        Campo para contraseñas <input type="password" name="pass"><br>
+        Campo para email <input type="email" name="email"><br>
+        Campo para números <input type="number" name="num"><br>
+        Campo tipo Radio <input type="radio" name="rad">A <input type="radio" name="rad">B <input type="radio" name="rad">C<br>
+        Campo tipo Checkbox <input type="checkbox" name="chk">A <input type="checkbox" name="chk">B <input type="checkbox" name="chk">C<br>
+        Campo para archivos <input type="file" name="arch"><br><br>
+        Campo para enviar <input type="submit" value="Enviar"><br> -->
+
+    
+            <footer>
+                <p><strong>Star & Sky Makeup Store</strong></p>
+                <p>Creado por: PAMELA ALBA - 2025</p>
+                <p>📧 Email: <a href="mailto:pame@gmail.com">pame@gmail.com</a></p>
+                <p>✨ Tu belleza es nuestra pasión ✨</p>
+            </footer>
+            
+
+</body>
+</html>

@@ -16,233 +16,187 @@
         <aside class="sidebar">
             <div class="logo">
                 <!-- <div class="logo-icon">★</div> -->
-                <img src="/img/STAR2.jpg" alt="Logo de STAR & SKY" style="width: 170px; height: auto; border-radius: 50%; margin-top: 10px;">
-                <h3>STAR & SKY</h3>
+                <img src="/img/STAR2.jpg" alt="Logo de STAR & SKY" class="logo-icon">
+                
             </div>
             
             <nav class="menu">
                 <ul>
-                    <li><a href="#inicio">🏠 Inicio</a></li>
-                    <li><a href="#productos">💄 Productos</a></li>
+                    <li><a href="index.html">🏠 Inicio</a></li>
+                    <li><a href="productos.html">💄 Productos</a></li>
                     <li><a href="galeria.html">📷 Galería</a></li>
-                    <li><a href="#pedidos">🛒 Pedidos</a></li>
-                    <li><a href="#contacto">📞 Contacto</a></li>
+                    <li><a href="pedidos.html">🛒 Pedidos</a></li>
+                    <li><a href="contacto.html">📞 Contacto</a></li>
                 </ul>
             </nav>
         </aside>
         
-        <!-- Contenido principal -->
-        <main class="main-content">
-            <header class="header">
-                <h1>STAR & SKY - Makeup Store</h1>
-                <p style="color: white; font-size: 1.2em;">Expertas en Beauty Hacks 💁🏻‍♀️💜💄</p>
-            </header>
 
 
-            <section id="productos" class="content-section">
-                <h2>💄 NUESTROS PRODUCTOS</h2>
-                
-                <div class="product-list">
-                    <div class="product-category">
-                        <h3>🪞Bases</h3>
-                        <ul>
-                            <li>Base en Crema</li>
-                            <li>Base en Polvo</li>
-                            <li>Base Líquida</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="product-category">
-                        <h3>🎨 Paletas de Sombras</h3>
-                        <ul>
-                            <li>Sombras de bolsillo</li>
-                            <li>Paleta 40 tonos</li>
-                            <li>Paleta 60 tonos</li>
-                            <li>Paleta 90 tonos</li>
-                            <li>Sombras con brillos</li>
-                            <li>Sombras fosforescentes</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="product-category">
-                        <h3>💋 Labiales</h3>
-                        <ul>
-                            <li>Labial Matte</li>
-                            <li>Gloss Brillante</li>
-                            <li>Líquido Matte</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="product-category">
-                        <h3>👁️ Máscaras de Pestañas</h3>
-                        <ul>
-                            <li>Color Negro Intenso</li>
-                            <li>Transparente</li>
-                            <li>Colores Especiales</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="product-category">
-                        <h3>✨ Pestañas Postizas</h3>
-                        <ul>
-                            <li>Paquete de 10 pares</li>
-                            <li>Paquete de 5 pares</li>
-                            <li>Paquete de 3 pares</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contacto" class="content-section">
-                <h2>📍 NUESTRAS SUCURSALES</h2>
-                
-                <table>
-                    <tr>
-                        <th>🏪 Sucursal</th>  
-                        <th>📍 Ubicación</th>  
-                        <th>⏰ Horarios</th>  
-                    </tr>
-                    <tr>
-                        <td><strong>Coyoacán</strong></td>   
-                        <td><a href="https://goo.gl/maps/K2cyeqeG4Qgh927p9" target="_blank">Centro de Coyoacán</a></td>  
-                        <td>Lunes a Viernes<br>9:00am - 5:00pm</td>  
-                    </tr>
-                    <tr>
-                        <td><strong>Centro</strong></td>  
-                        <td><a href="https://goo.gl/maps/YHKoqqGLWV1rqyhL7" target="_blank">Plaza Izazaga 38</a></td>  
-                        <td>Lunes a Sábado<br>9:00am - 6:00pm</td>  
-                    </tr>
-                    <tr>
-                        <td><strong>Roma Norte</strong></td>  
-                        <td><a href="https://goo.gl/maps/9Q1VMqh7eo16yAea9" target="_blank">Cotorritos Cibeles</a></td> 
-                        <td>Lunes a Viernes<br>10:00am - 5:00pm</td>  
-                    </tr>
-                </table>
-            </section>
-
-            <section id="pedidos" class="content-section">
-                <h2>🛒 PEDIDOS EN LÍNEA</h2>
-                <p style="text-align: center; font-size: 1.1em; margin-bottom: 30px;">¡Realiza tu pedido fácil y rápido!</p>
-                
-                <div class="form-section">
-
-<form style="margin-left: 20px;" action="https://sheetdb.io/api/v1/0e4w9kibobioy" method="POST">
-    <h3>Tipos de bases</h3>
-    <input type="checkbox" id="Crema" name="Crema" value="Crema">
-    <label style="font-size: 19px;"for="Crema">Crema</label>
-    <!-- agregar id y name a todos para que el javascript lo lea -->
-    <input type="number" id="CremaNumber" name="CremaNumber" placeholder="¿Cuántos?">
-    <br>
-
-    <input type="checkbox" id="Liquida" name="Liquida" value="Liquida">
-    <label style="font-size: 19px;"for="Liquida">Liquida</label>
-    <input type="number" id="LiquidaNumber" name="LiquidaNumber" placeholder="¿Cuántos?">
-    <br>
-
-    <input type="checkbox" id="Polvo" name="Polvo" value="Polvo">
-    <label style="font-size: 19px;"for="Polvo">Polvo</label>
-    <input type="number" id="PolvoNumber" name="PolvoNumber" placeholder="¿Cuántos?">
-
-    <h3>Paleta de Sombras</h3>
-    <input type="checkbox" id="Sombras de bolsillo" name="Sombras de bolsillo" value="Sombras de bolsillo">
-    <label style="font-size: 19px;"for="Sombras de bolsillo">Sombras de bolsillo</label>
-    <input type="number" placeholder="¿Cuántos?"><br>
-
-    <input type="checkbox" id="topping2" name="topping2" value="sombras">
-    <label style="font-size: 19px;"for="topping2">Sombras de 40 tonos</label>
-    <input type="number" placeholder="¿Cuántos?"><br>
-
-    <input type="checkbox" id="Sombras de 40 tonos" name="Sombras de 40 tonos" value="Sombras de 40 tonos">
-    <label style="font-size: 19px;"for="Sombras de 40 tonos">Sombras de 60 tonos</label>
-    <input type="number" placeholder="¿Cuántos?"><br>
-
-    <input type="checkbox" id="Sombras de 90 tonos" name="Sombras de 90 tonos" value="Sombras de 90 tonos">
-    <label style="font-size: 19px;"for="Sombras de 90 tonos">Sombras de 90 tonos</label>
-    <input type="number" placeholder="¿Cuántos?"><br>
-
-    <input type="checkbox" id="Sombras de brillos" name="Sombras de brillos" value="Sombras de brillos">
-    <label style="font-size: 19px;"for="Sombras de brillos">Sombras de brillos</label>
-    <input type="number" placeholder="¿Cuántos?"><br>
-
-    <input type="checkbox" id="topping6" name="topping6" value="sombras">
-    <label style="font-size: 19px;"for="topping6">Sombras fosforescentes</label>
-    <input type="number" placeholder="¿Cuántos?"><br>
-
-    <h3>Labiales</h3>
-    <input type="checkbox" id="topping1" name="topping1" value="Labiales">
-    <label style="font-size: 19px;"for="topping1">Labial Matte</label>
-    <input type="number" placeholder="¿Cuántos?"><br>
-    <input type="checkbox" id="topping2" name="topping2" value="Labiales">
-    <label style="font-size: 19px;"for="topping2">Gloss</label>
-    <input type="number" placeholder="¿Cuántos?"><br>
-    <input type="checkbox" id="topping3" name="topping3" value="Labiales">
-    <label style="font-size: 19px;"for="topping3">Líquido Matte</label>
-    <input type="number" placeholder="¿Cuántos?">
-
-    <h3>Máscara de pestañas</h3>
-    <input type="checkbox" id="topping1" name="topping1" value="pestañas">
-    <label style="font-size: 19px; "for="topping1">Color negro</label>
-    <input type="number" placeholder="¿Cuántos?"><br>
-    <input type="checkbox" id="topping2" name="topping2" value="pestañas">
-    <label style="font-size: 19px;"for="topping2">Transparente</label>
-    <input type="number" placeholder="¿Cuántos?"><br>
-    <input type="checkbox" id="topping3" name="topping3" value="pestañas">
-    <label for="topping3">Otro color</label>
-    <input type="number" placeholder="¿Cuántos?">
+      <!-- Contenido principal -->
 
 
-    <h3>Eyelashes</h3>
-    <input type="checkbox" id="topping1" name="topping1" value="Eyelashes">
-    <label style="font-size: 19px; "for="topping1">Paquete de 10</label>
-    <input type="number" placeholder="¿Cuántos?"><br>
-    <input type="checkbox" id="topping2" name="topping2" value="Eyelashes">
-    <label style="font-size: 19px;"for="topping2">Paquete de 5</label>
-    <input type="number" placeholder="¿Cuántos?"><br>
-    <input type="checkbox" id="topping3" name="topping3" value="Eyelashes">
-    <label style="font-size: 19px;"for="topping3">Paquete de 3</label>
-    <input type="number" placeholder="¿Cuántos?">
-    <br><br>
+       <main class="main-content">
+            <header class="header"></header>
 
-<section style="text-align: center; font-size: 20px;">
-    <h3>DATOS ADICIONALES</h3>
-    <label for="Nombre">Nombre:</label>
-    <input type="text" id="Nombre" name="Nombre" placeholder="¿Cómo te llamas?">
-    <br><br>
+  <!-- Apartado: Fuente opcional (puedes cambiarla o quitarla) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <label for="Cel">Teléfono</label>
-    <input type="number" id="Cel" name="Cel" placeholder="¿Cuál es tu número?">
-    <br><br>
-    
+  <!-- Apartado: Hoja de estilos principal -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Apartado: Barra superior (experiencias, cuenta, carrito) -->
+  <div class="topbar">
+    <div class="topbar__left">
+      <!-- Texto superior izquierda -->
+      <a href="#" class="topbar__link">Experiencias en tienda</a>
+    </div>
+    <div class="topbar__right">
+      <!-- Iconos / enlaces superiores derecha -->
+      <a href="#" class="topbar__link">Mi cuenta</a>
+      <a href="#" class="topbar__link">💄✨</a>
+    </div>
+  </div>
 
-    <label for="Email">Email</label>
-   <input type="email" id="Email" name="Email" placeholder="¿Cuál es tu correo?">
-    <br><br>
-    
-    <button style="width: 200px; height: 40px; color-scheme: initial;" type="submit", value="Enviar">ENVIAR PEDIDO</button>
-    <br><br>
+  <!-- Apartado: Header con logo y buscador -->
+  <header class="header">
+    <div class="header__brand">
+      <!-- Logo (puedes reemplazar el texto por una imagen) -->
+      <a href="#" class="logo">STAR & SKY</a>
+    </div>
+    <div class="header__search">
+      <!-- Buscador (placeholder editable) -->
+      <input type="search" placeholder="Buscar productos, marcas..." aria-label="Buscar" />
+      <button type="button" class="btn btn--search">Buscar</button>
+    </div>
+  </header>
 
-    <!-- más opciones de formlario -->
+  <!-- Apartado: Navegación principal (categorías y marcas) -->
+  <nav class="nav">
+    <ul class="nav__list">
+      <!-- Cambia, agrega o quita categorías -->
+      <li class="nav__item"><a href="#">Cabello</a></li>
+      <li class="nav__item"><a href="#">Maquillaje</a></li>
+      <li class="nav__item"><a href="#">Cuidado de la piel</a></li>
+      <li class="nav__item"><a href="#">Perfumes</a></li>
+      <li class="nav__item"><a href="#">Benefit</a></li>
+      <li class="nav__item"><a href="#">Chanel</a></li>
+      <li class="nav__item"><a href="#">Dior</a></li>
+      <li class="nav__item"><a href="#">Rare Beauty</a></li>
+      <li class="nav__item"><a href="#">Sephora Collection</a></li>
+    </ul>
+  </nav>
 
-     <!--Entrada de texto simple <input type="text" name="txt"><br>
-        Campo para contraseñas <input type="password" name="pass"><br>
-        Campo para email <input type="email" name="email"><br>
-        Campo para números <input type="number" name="num"><br>
-        Campo tipo Radio <input type="radio" name="rad">A <input type="radio" name="rad">B <input type="radio" name="rad">C<br>
-        Campo tipo Checkbox <input type="checkbox" name="chk">A <input type="checkbox" name="chk">B <input type="checkbox" name="chk">C<br>
-        Campo para archivos <input type="file" name="arch"><br><br>
-        Campo para enviar <input type="submit" value="Enviar"><br> -->
+  <!-- Apartado: Contenedor de promociones (3 columnas en escritorio) -->
+  <main class="promos">
+    <!-- Apartado: Tarjeta 1 - L'Oréal Professionnel -->
+    <article class="promo-card promo-card--dark">
+      <!-- Etiquetas superiores (editables) -->
+      <div class="promo-card__tags">
+        <span class="tag tag--exclusive">Tips aqui</span>
+        <span class="tag tag--new">Nuevo</span>
+      </div>
 
+      <!-- Imagen principal: reemplaza la URL por tu imagen -->
+      <div class="promo-card__media">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop" alt="Absolut Repair Molecular Oil - L'Oréal Professionnel" />
+      </div>
 
-                </div>
-            </section>
+      <!-- Texto de la promoción: títulos y descripción -->
+      <div class="promo-card__content">
+        <h3 class="promo-card__brand">L'Oréal Professionnel Paris</h3>
+        <h2 class="promo-card__title">Absolut Repair Molecular Oil</h2>
+        <p class="promo-card__desc">
+          Descubre el nuevo Absolut Repair Molecular Oil y luce un cabello sano y hermoso en navidad.
+        </p>
+        <a href="#" class="btn btn--primary">Compra ahora</a>
+      </div>
+    </article>
+
+    <!-- Apartado: Tarjeta 2 - Sephora Collection brochas -->
+    <article class="promo-card promo-card--light">
+      <div class="promo-card__tags">
+        <span class="tag tag--exclusive">Solo en Sephora</span>
+      </div>
+      <div class="promo-card__media">
+        <img src="https://images.unsplash.com/photo-1618761714954-0b4f64441a5b?q=80&w=1200&auto=format&fit=crop" alt="Set de brochas Pillow Dream - Sephora Collection" />
+      </div>
+      <div class="promo-card__content">
+        <h3 class="promo-card__brand">Sephora Collection</h3>
+        <h2 class="promo-card__title">Set de brochas Pillow Dream</h2>
+        <p class="promo-card__desc">
+          ¡Descubre lo mejor de Sephora Collection! Obtén el estuche ideal con un set de brochas Pillow Dream.
+        </p>
+        <a href="#" class="btn btn--primary">Compra ahora</a>
+      </div>
+    </article>
+
+    <!-- Apartado: Tarjeta 3 - Calendario de Adviento / Regalo -->
+    <article class="promo-card promo-card--holiday">
+      <div class="promo-card__tags">
+        <span class="tag tag--gift">Calendario de Adviento</span>
+      </div>
+      <div class="promo-card__media">
+        <img src="https://images.unsplash.com/photo-1542977292-5137c86c932a?q=80&w=1200&auto=format&fit=crop" alt="Promoción navideña con cosmetiquera de regalo" />
+      </div>
+      <div class="promo-card__content">
+        <h3 class="promo-card__brand">Promoción Navideña</h3>
+        <h2 class="promo-card__title">¡Nuevo regalo!</h2>
+        <p class="promo-card__desc">
+          En compras seleccionadas llévate una cosmetiquera de regalo. Aprovecha la temporada.
+        </p>
+        <a href="#" class="btn btn--primary">Compra ahora</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Apartado: Pie de página (enlaces y notas) -->
+  <footer class="footer">
+    <div class="footer__cols">
+      <!-- Columna 1: ayuda -->
+      <div class="footer__col">
+        <h4>Ayuda</h4>
+        <ul>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Envíos y devoluciones</a></li>
+          <li><a href="#">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+      <!-- Columna 2: legal -->
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+      <!-- Columna 3: redes -->
+      <div class="footer__col">
+        <h4>Síguenos</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copy">© 2025. Sitio demostrativo.</p>
+  </footer>
+</body>
+</html>
+
             
-            <footer>
+            <!-- <footer>
                 <p><strong>Star & Sky Makeup Store</strong></p>
                 <p>Creado por: PAMELA ALBA - 2025</p>
                 <p>📧 Email: <a href="mailto:pame@gmail.com">pame@gmail.com</a></p>
                 <p>✨ Tu belleza es nuestra pasión ✨</p>
-            </footer>
-        </main>
-    </div>
-</body>
-</html>
+            </footer> -->
+
+
+
+
