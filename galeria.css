@@ -92,8 +92,18 @@
         }
         
         /* Galería en carrete */
+
+        .img base {
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+        }
+
+
+
+
         .gallery-section {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(175, 133, 192, 0.9);
             border-radius: 15px;
             padding: 30px;
             margin-bottom: 30px;
@@ -101,7 +111,7 @@
         }
         
         .gallery-section h2 {
-            color: #8a2be2;
+            color: #55287f;
             margin-bottom: 25px;
             font-size: 1.8em;
             text-align: center;
@@ -124,7 +134,7 @@
         .carousel-item {
             min-width: 300px;
             height: 200px;
-            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            background: linear-gradient(45deg, #6a28a7, #c44598);
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -153,6 +163,7 @@
             background: rgba(0,0,0,0.3);
             opacity: 0;
             transition: opacity 0.3s ease;
+            padding: 150px;
         }
         
         .carousel-item:hover::before {
@@ -165,7 +176,7 @@
         }
         
         .carousel-btn {
-            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            background: linear-gradient(45deg, #6a28a7, #c44598);
             color: white;
             border: none;
             padding: 12px 20px;
@@ -191,7 +202,7 @@
         }
         
         .product-card {
-            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            background: linear-gradient(45deg, #6a28a7, #c44598);
             border-radius: 15px;
             padding: 20px;
             text-align: center;
