@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sephora Homepage</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec13a4",
+                        "background-light": "#ffffff",
+                        "background-dark": "#121212",
+                        "surface-light": "#f5f5f5",
+                        "surface-dark": "#1e1e1e",
+                        "text-main": "#000000",
+                        "text-secondary": "#666666",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"],
+                        "body": ["Spline Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Spline Sans', sans-serif;
+        }
+        /* Custom scrollbar for clean look */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-white transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Promo Banner -->
+<div class="bg-primary text-white text-center py-2 text-xs font-bold tracking-wide">
+            ¡ENVÍO GRATIS EN TODOS LOS PEDIDOS SUPERIORES A $50!
+        </div>
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-background-light dark:bg-surface-dark border-b border-gray-200 dark:border-gray-800 shadow-sm">
+<div class="max-w-[1280px] mx-auto px-4 lg:px-10 py-4">
+<div class="flex flex-col lg:flex-row items-center gap-4 lg:gap-8 justify-between">
+<!-- Logo -->
+<a class="flex-shrink-0 flex items-center gap-2" href="#">
+<span class="text-2xl font-bold tracking-[0.2em] text-black dark:text-white">SEPHORA</span>
+</a>
+<!-- Search Bar -->
+<div class="w-full max-w-[600px] flex-1">
+<label class="relative flex items-center w-full h-10 rounded-full bg-surface-light dark:bg-zinc-800 overflow-hidden group focus-within:ring-2 focus-within:ring-primary/50 transition-all">
+<div class="absolute left-0 pl-3 flex items-center pointer-events-none text-text-secondary">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-full bg-transparent border-none outline-none text-sm pl-10 pr-4 text-text-main dark:text-white placeholder:text-text-secondary focus:ring-0" placeholder="Buscar..." type="text"/>
+</label>
+</div>
+<!-- Icons / Right Nav -->
+<div class="flex items-center gap-6 text-xs font-medium whitespace-nowrap">
+<a class="hidden xl:flex items-center gap-2 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[24px] group-hover:scale-110 transition-transform">storefront</span>
+<div class="flex flex-col text-left">
+<span class="font-bold">Tiendas</span>
+<span class="text-text-secondary dark:text-gray-400 font-normal">Find a store</span>
+</div>
+</a>
+<a class="flex items-center gap-2 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[24px] group-hover:scale-110 transition-transform">person</span>
+<div class="hidden md:flex flex-col text-left">
+<span class="font-bold">Mi Cuenta</span>
+<span class="text-text-secondary dark:text-gray-400 font-normal">Sign In</span>
+</div>
+</a>
+<a class="flex items-center gap-2 hover:text-primary transition-colors group relative" href="#">
+<span class="material-symbols-outlined text-[24px] group-hover:scale-110 transition-transform">shopping_basket</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] text-white font-bold">2</span>
+</a>
+</div>
+</div>
+</div>
+</header>
+<!-- Secondary Navigation -->
+<nav class="w-full bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800 overflow-x-auto hide-scrollbar">
+<div class="max-w-[1280px] mx-auto px-4 lg:px-10">
+<ul class="flex items-center justify-start lg:justify-center gap-8 min-w-max py-3">
+<li><a class="text-sm font-bold hover:text-primary hover:border-b-2 hover:border-primary pb-1 transition-all" href="#">Nuevos</a></li>
+<li><a class="text-sm font-medium hover:text-primary hover:border-b-2 hover:border-primary pb-1 transition-all" href="#">Marcas</a></li>
+<li><a class="text-sm font-medium hover:text-primary hover:border-b-2 hover:border-primary pb-1 transition-all" href="#">Maquillaje</a></li>
+<li><a class="text-sm font-medium hover:text-primary hover:border-b-2 hover:border-primary pb-1 transition-all" href="#">Cuidado de la Piel</a></li>
+<li><a class="text-sm font-medium hover:text-primary hover:border-b-2 hover:border-primary pb-1 transition-all" href="#">Cabello</a></li>
+<li><a class="text-sm font-medium hover:text-primary hover:border-b-2 hover:border-primary pb-1 transition-all" href="#">Perfumes</a></li>
+<li><a class="text-sm font-medium hover:text-primary hover:border-b-2 hover:border-primary pb-1 transition-all" href="#">Herramientas</a></li>
+<li><a class="text-sm font-bold text-red-600 hover:text-red-700 hover:border-b-2 hover:border-red-600 pb-1 transition-all" href="#">Sale &amp; Ofertas</a></li>
+</ul>
+</div>
+</nav>
+<!-- Main Content Layout -->
+<main class="flex-grow w-full max-w-[1280px] mx-auto px-4 lg:px-10 py-8 flex flex-col gap-12">
+<!-- Hero Section -->
+<section class="w-full rounded-xl overflow-hidden shadow-sm">
+<div class="relative w-full min-h-[400px] lg:min-h-[500px] flex items-center bg-cover bg-center" data-alt="Close up of a model with glossy makeup and bold pink lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAci6x67LnTJZS3jKzRIR0xGk3qbRRPwwGHuoe7FwpBgVCVd5FyxEIMopjJhnvHOQbjgaXHZJZ3Wq6npXSQXQ1SprJT9bQ-iHpSx3djCLf-zYaP70LH19aXrME8uYNphIOLWpwvgccaQ4jXsI1FEwIbQy3bVBB5hGblVlNhIty8vAgcEW2jAWYZax7n6Eelhw_OWSgSYC9h9Cdf2v4hdCPOVrHx2RCLtWvJYkNbr1hEPeIIYOlxvnh-y2gZ01I5SlZx8wp6MUSj4fY');">
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"></div>
+<div class="relative z-10 px-8 lg:px-16 max-w-2xl text-white">
+<span class="uppercase tracking-widest text-xs font-bold mb-2 block text-primary">Solo en Sephora</span>
+<h1 class="text-4xl lg:text-6xl font-black mb-4 leading-tight">
+                            Nuevos Lanzamientos <br/> de Temporada
+                        </h1>
+<p class="text-lg text-gray-200 mb-8 max-w-md">
+                            Descubre los looks más atrevidos y los productos esenciales para brillar esta temporada.
+                        </p>
+<button class="bg-primary hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg flex items-center gap-2">
+                            COMPRA AHORA
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Featured Categories (Mini Banners) -->
+<section class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<a class="group relative rounded-lg overflow-hidden aspect-[4/3]" href="#">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Makeup palette flatlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUySNlgVLrXU5rL0Jp3PcB_lvW5VimB8RfLAmzcmHTZmOSHNSkUtpZb9pmw6x8XpOYBJZt2aIuh-HExqHK1a5EGiDv9_cUjfBZwH0BBXDVZLqi_plDWYi6NFO9kcHMzmJXxkSP0QtoT5N4e3Kbgpqf8IHoDTPfXmKLTDRdH5F-Tf4pZhE1vNDl7pM1nCb5q5NnAIN25dT4q6F1Q70cjhjEliKaCG8mX9tL3NQA2ybnArviXBi7bu4VYNoFMiVIl9va48S1Zm77N_A"/>
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+<h3 class="text-white font-bold text-xl uppercase tracking-wider drop-shadow-md">Maquillaje</h3>
+</div>
+</a>
+<a class="group relative rounded-lg overflow-hidden aspect-[4/3]" href="#">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Skincare serum bottle with water drops" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiq64gJC0KB-KRhb8_KA1zmose5mXWoyq2Rpz-4Okjuu2aUAhJVrNj70O7wJhh8jFGlB0olotmkyEpy3oH8E80WC13BxUyIOhMnkZFbY8TG1m1Gid78NbqmlBTFxwY8EmW8UNH8Xk6BXbA4G1RkFvim3sn1zpbPthtLaVmqA9zHCc2I7DWsakvIXgOaZ2Zb86uPE0MFSEARwvGTwS_ZaTb2k7RlP2Tiqvm2xI1oDYkmJ2BATgw3F1YXyNJTfiRsbEk0TdN0GB_E6s"/>
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+<h3 class="text-white font-bold text-xl uppercase tracking-wider drop-shadow-md">Skin Care</h3>
+</div>
+</a>
+<a class="group relative rounded-lg overflow-hidden aspect-[4/3]" href="#">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury perfume bottle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLa9qN2Lf7_2baFg4_7FsSBnmT0g1GQhuAaBUtRbhIvdsKz9deKtpGgi93MKupvUudfGpnboJFOijN1-IIJIMbG6-etBESkhsMMba6O4ddbI_NR0J7zF7EBSQNuFpq4rIa87D7vnHC9UKJaGdb9Nq9VBm3aWSAkyzF6De4hnZLL1CFPhGpp26DW-Y6zGj5V3ycXK0R7hXFNw_DjX83VlRy32X9kE1wDrPEi0Ak8T0KYT3xpE6bj4kdamNHCnbkGjeqFUimVTypLeU"/>
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+<h3 class="text-white font-bold text-xl uppercase tracking-wider drop-shadow-md">Fragancias</h3>
+</div>
+</a>
+<a class="group relative rounded-lg overflow-hidden aspect-[4/3]" href="#">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Hair care products styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBinOY8DcD4eKjB3JNLsJQwRZKG1vlnnBD0nOgcQQRh_T6mrBbTr6yCFo0mIqL9ry79IXvHUm3GTp3EaFdJdwu-lfjnm2bUuBc1g2KrMeToIc5WHipihJNX1dpcXVtYIjmzbEbpSX4OxRLxvhbpbjPWLQZeOFTpkFoJC1O7SQlUdsgO6tbJJwTAfXjJmHm3lVz-qwcnlGugKLABXtfBfuYixRGPeWw84no_8gFb5rBH8NJo1-rFZlFSmdj_j4aEDa6WIxqieF1jkc"/>
+<div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+<h3 class="text-white font-bold text-xl uppercase tracking-wider drop-shadow-md">Cabello</h3>
+</div>
+</a>
+</section>
+<!-- Product Carousel Section -->
+<section class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<h2 class="text-2xl font-bold text-text-main dark:text-white">Elegidos Para Ti</h2>
+<a class="text-sm font-bold text-primary hover:underline" href="#">Ver Todo</a>
+</div>
+<!-- Carousel Container -->
+<div class="relative group/carousel">
+<div class="flex overflow-x-auto gap-6 pb-6 hide-scrollbar snap-x snap-mandatory">
+<!-- Product Card 1 -->
+<div class="min-w-[240px] md:min-w-[260px] snap-start flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[3/4] w-full bg-surface-light dark:bg-zinc-800 rounded-lg overflow-hidden">
+<span class="absolute top-2 left-2 bg-black text-white text-[10px] font-bold px-2 py-1 uppercase tracking-wider z-10">Nuevo</span>
+<div class="absolute top-2 right-2 z-10">
+<button class="bg-white/80 hover:bg-white p-2 rounded-full shadow-sm text-black transition-colors">
+<span class="material-symbols-outlined text-[20px] leading-none">favorite</span>
+</button>
+</div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Purple bottle of luxury face serum" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3oIazRNzLZV5kYrmkBF5H-l6smHZEGWPEr9Gd05y7iCGOhT2UX0awFabwbLGTxQWvC_bi-wNlv6viPsOWEJJ5gr19OgkMsT3KJExwrYo2cun6-0dN5Z27VfOw2UUB6bYzp5CzYaQHPOFR_tcv6WcpTwr2SiiOnvN0ASNxOnqQpIl8P0PXy0sww7_aOKr8U3jxXpXVk4JCGbTzxOW5dEzVzZBmcVE8rPa2mH6SmWeG9HiuangnxetQMMYHzhb72ggcoAELpPP4yJo"/>
+<div class="absolute bottom-0 left-0 w-full p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="w-full bg-primary hover:bg-pink-600 text-white font-bold py-2 rounded-lg shadow-lg text-sm transition-colors">
+                                        Agregar Rápido
+                                    </button>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase text-text-main dark:text-white mb-1">Drunk Elephant</h4>
+<p class="text-sm text-text-secondary dark:text-gray-300 font-medium line-clamp-2 leading-tight mb-2">Protini™ Polypeptide Cream</p>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-gray-300">star</span>
+<span class="text-[10px] text-text-secondary ml-1">(1.2k)</span>
+</div>
+<p class="text-sm font-bold text-text-main dark:text-white">$68.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="min-w-[240px] md:min-w-[260px] snap-start flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[3/4] w-full bg-surface-light dark:bg-zinc-800 rounded-lg overflow-hidden">
+<span class="absolute top-2 left-2 bg-primary text-white text-[10px] font-bold px-2 py-1 uppercase tracking-wider z-10">Exclusive</span>
+<div class="absolute top-2 right-2 z-10">
+<button class="bg-white/80 hover:bg-white p-2 rounded-full shadow-sm text-black transition-colors">
+<span class="material-symbols-outlined text-[20px] leading-none">favorite</span>
+</button>
+</div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Red lipstick tube open" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtBAlIJtIIII6iSwg7T6m6ccrqGwRhSC_kUpeiwvTzoYS3cUFfpjIt9eY5wof_AahgoP6eLPG1tk0vD4Qb1j_Kd2AO-wX3pRRLCP-Qr_bM_j24QuoF48d_BHMw4mCmex9Db9od3l7inGrOWMU1sQtnahqb97-uekBwJ65aw6JGAQU2DYWnh3vETSxsWxoXvXDNT4Dv88ilkPht0r0XM-IF2iqQKlVRGVn0lzzmSGahHxbADTnzSYCm8VQjuIfYKW8UYFThr6aF25Q"/>
+<div class="absolute bottom-0 left-0 w-full p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="w-full bg-primary hover:bg-pink-600 text-white font-bold py-2 rounded-lg shadow-lg text-sm transition-colors">
+                                        Agregar Rápido
+                                    </button>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase text-text-main dark:text-white mb-1">Fenty Beauty</h4>
+<p class="text-sm text-text-secondary dark:text-gray-300 font-medium line-clamp-2 leading-tight mb-2">Icon Velvet Liquid Lipstick</p>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="text-[10px] text-text-secondary ml-1">(450)</span>
+</div>
+<p class="text-sm font-bold text-text-main dark:text-white">$29.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="min-w-[240px] md:min-w-[260px] snap-start flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[3/4] w-full bg-surface-light dark:bg-zinc-800 rounded-lg overflow-hidden">
+<div class="absolute top-2 right-2 z-10">
+<button class="bg-white/80 hover:bg-white p-2 rounded-full shadow-sm text-black transition-colors">
+<span class="material-symbols-outlined text-[20px] leading-none">favorite</span>
+</button>
+</div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Glass bottle of floral perfume" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy48Jt_ppnaMoJ1RoF70hVA8Q8_i9tJ3f_d4S0GMtsj_8gCuuSt6WiDxoOgFxEZAI9GiQOfkmc0IZwPtnYHYudf_jv9-hdLmCEE9-lLxPreHwTHrjU7quEV-V-GJqWgjAwD4zzZMwirWvdtB9Gkxc8WhElLYFem-yCpPNSv3y_KL2OKD8FzY1BUh-dtjeotvW0Bt6jDhP_sDOBWhKlWoBU3QB4IW1ohhf3zr8xVQkY__fB9ZQVMR6upVTyj7Ru-Fm6VkCUlJPT4hI"/>
+<div class="absolute bottom-0 left-0 w-full p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="w-full bg-primary hover:bg-pink-600 text-white font-bold py-2 rounded-lg shadow-lg text-sm transition-colors">
+                                        Agregar Rápido
+                                    </button>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase text-text-main dark:text-white mb-1">Gucci</h4>
+<p class="text-sm text-text-secondary dark:text-gray-300 font-medium line-clamp-2 leading-tight mb-2">Flora Gorgeous Gardenia Eau de Parfum</p>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-gray-300">star_half</span>
+<span class="text-[10px] text-text-secondary ml-1">(2.1k)</span>
+</div>
+<p class="text-sm font-bold text-text-main dark:text-white">$155.00</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="min-w-[240px] md:min-w-[260px] snap-start flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[3/4] w-full bg-surface-light dark:bg-zinc-800 rounded-lg overflow-hidden">
+<span class="absolute top-2 left-2 bg-black text-white text-[10px] font-bold px-2 py-1 uppercase tracking-wider z-10">Best Seller</span>
+<div class="absolute top-2 right-2 z-10">
+<button class="bg-white/80 hover:bg-white p-2 rounded-full shadow-sm text-black transition-colors">
+<span class="material-symbols-outlined text-[20px] leading-none">favorite</span>
+</button>
+</div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Bottle of facial toner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6_AZHK4kyZen-aLGIomOf13ti64qrQIOmZ9LVQUNZ1alhhciT75RQQp07gOfI7CKpYAVdjfh9ZrUYzE26hJHYoMw1pJ1L3WQVdnKkIIjMu9S8dI9QIjwwsn0BQlOtP1wXAnW5drsEX5Vwms3-zuzx_qODfbvMsNAexPlibenvpPo1mFklcloE739vrBJZScWzNuI4DN8rCqvN8mRCVNwW9HMBc4Cm50cesw04ePsMx6XNEryuQTcHkI49fiFel9DmTE64anRAJbg"/>
+<div class="absolute bottom-0 left-0 w-full p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="w-full bg-primary hover:bg-pink-600 text-white font-bold py-2 rounded-lg shadow-lg text-sm transition-colors">
+                                        Agregar Rápido
+                                    </button>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase text-text-main dark:text-white mb-1">Glow Recipe</h4>
+<p class="text-sm text-text-secondary dark:text-gray-300 font-medium line-clamp-2 leading-tight mb-2">Watermelon Glow PHA+BHA Pore-Tight Toner</p>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="text-[10px] text-text-secondary ml-1">(5.8k)</span>
+</div>
+<p class="text-sm font-bold text-text-main dark:text-white">$34.00</p>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="min-w-[240px] md:min-w-[260px] snap-start flex flex-col gap-3 group cursor-pointer">
+<div class="relative aspect-[3/4] w-full bg-surface-light dark:bg-zinc-800 rounded-lg overflow-hidden">
+<div class="absolute top-2 right-2 z-10">
+<button class="bg-white/80 hover:bg-white p-2 rounded-full shadow-sm text-black transition-colors">
+<span class="material-symbols-outlined text-[20px] leading-none">favorite</span>
+</button>
+</div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Eyeshadow palette open" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEPXCb_ZuE-oH-2RGL8HZ_lwiHSdvtYY-FxVMlvlwvYlf1UOrM9Hz8wvSQvFQYKiTLIiH8FOtaPfji-kjsUdtP655Et_okgQSXxt-QS94VyV684-B8M6VZWXy9AH0yFADvEnIBgzTVJPEDQOcGooxWBlZBjhuyczKUPmYKjKt9cr-ctQRpvF2fbzSnkPGC964hQKhCuIZ-lkwchdMwQRzF6qfJKMguSAuqMBQlHDI6bcfhiVWsNyop7WBbeEkhyucLHt4cevlmg38"/>
+<div class="absolute bottom-0 left-0 w-full p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="w-full bg-primary hover:bg-pink-600 text-white font-bold py-2 rounded-lg shadow-lg text-sm transition-colors">
+                                        Agregar Rápido
+                                    </button>
+</div>
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase text-text-main dark:text-white mb-1">Natasha Denona</h4>
+<p class="text-sm text-text-secondary dark:text-gray-300 font-medium line-clamp-2 leading-tight mb-2">Glam Eyeshadow Palette</p>
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-black dark:text-white fill-current">star</span>
+<span class="material-symbols-outlined text-[14px] text-gray-300">star</span>
+<span class="text-[10px] text-text-secondary ml-1">(980)</span>
+</div>
+<p class="text-sm font-bold text-text-main dark:text-white">$65.00</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Stub -->
+<footer class="bg-black text-white py-12 mt-12">
+<div class="max-w-[1280px] mx-auto px-4 lg:px-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h5 class="font-bold mb-4">Acerca de Sephora</h5>
+<ul class="text-sm space-y-2 text-gray-400">
+<li><a class="hover:text-white" href="#">Sobre nosotros</a></li>
+<li><a class="hover:text-white" href="#">Carreras</a></li>
+<li><a class="hover:text-white" href="#">Impacto Social</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-4">Ayuda &amp; FAQ</h5>
+<ul class="text-sm space-y-2 text-gray-400">
+<li><a class="hover:text-white" href="#">Envios</a></li>
+<li><a class="hover:text-white" href="#">Devoluciones</a></li>
+<li><a class="hover:text-white" href="#">Contactanos</a></li>
+</ul>
+</div>
+<div class="col-span-1 md:col-span-2">
+<h5 class="font-bold mb-4">Únete a nuestra lista</h5>
+<p class="text-sm text-gray-400 mb-4">Regístrate para recibir novedades y promociones exclusivas.</p>
+<div class="flex gap-2">
+<input class="flex-1 bg-white/10 border-transparent rounded px-4 py-2 text-white focus:ring-1 focus:ring-white" placeholder="Email" type="email"/>
+<button class="bg-white text-black font-bold px-6 py-2 rounded hover:bg-gray-200">Enviar</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-4 lg:px-10 mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+                © 2024 Sephora USA, Inc. All rights reserved.
+            </div>
+</footer>
+</div>
+</body></html>
