@@ -285,3 +285,12 @@
                 height: 150px;
             }
         }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(115, 96, 160, 0.95);
+            color: rgb(15, 14, 14);
+            border-radius: 15px 15px 0 0;
+            margin-top: 30px;
+        }
